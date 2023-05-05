@@ -17,11 +17,11 @@ Fine-tuning - Improving the existing model to track more successfully on dataset
 
 Trackformer - New and Unique approach to Multi-Object tracking using transformers
 
-### Inputs/Outputs
-#### Inputs:
+## Inputs/Outputs
+### Inputs:
     New data previously not tested on trackformer.
         Videos with characteristics significantly different from MOT17 that was used to train model.
-#### Outputs:
+### Outputs:
     Part 1 - Results from testing on novel data
     Part 2 - New model based on original trackformer model fine-tuned with new datasets (Not Completed)
 
