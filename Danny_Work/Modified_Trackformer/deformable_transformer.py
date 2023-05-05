@@ -7,6 +7,12 @@
 # Copyright (c) Facebook, Inc. and its affiliates. All Rights Reserved
 # ------------------------------------------------------------------------
 
+#Things to change for testing:
+#1. Change the number of encoder and decoder layers
+#2. Change the number of feature levels
+#3. Change the number of heads
+
+
 import math
 
 import torch
