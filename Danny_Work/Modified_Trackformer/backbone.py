@@ -2,6 +2,14 @@
 """
 Backbone modules.
 """
+
+
+#Things to change:
+#1. Try different CNN for backbone.
+#   a. ResNet50
+#   b. ResNet34
+#   c. DenseNet50
+
 from typing import Dict, List
 
 import torch
