@@ -86,7 +86,7 @@ Google colab had its own set of issues that took several days to solve. Ultimate
 -Colab PRO+ also gave us access to A100 GPUs with 40gb of VRAM but unfortunately these GPUs are too modern and we encountered the same issues we had when trying to run locally. We could not overcome the incompatibility between trackformer, pytorch 1.5, and Cuda 10.2.
 
 
-#### MSI Training Roadblocks
+### MSI Training Roadblocks
 Module load cuda 11.2 & python 3.6.3_Anaconda
 Created env4 with python 3.7
 Installed pip and requirements.txt 
