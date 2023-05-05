@@ -42,3 +42,7 @@ Trackformer - New and Unique approach to Multi-Object tracking using transformer
 <video src="docs/luffy_trackformer.mp4" controls title="Title"></video>
 
 <video src="docs/mpls_lakes_3_trackformer.mp4" controls title="Title"></video>
+
+
+### Poster
+![Poster](poster.png)
