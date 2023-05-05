@@ -86,6 +86,53 @@ Google colab had its own set of issues that took several days to solve. Ultimate
 -Colab PRO+ also gave us access to A100 GPUs with 40gb of VRAM but unfortunately these GPUs are too modern and we encountered the same issues we had when trying to run locally. We could not overcome the incompatibility between trackformer, pytorch 1.5, and Cuda 10.2.
 
 
+#MSI TRAINING ROADBLOCKS: 
+Module load cuda 11.2 & python 3.6.3_Anaconda
+Created env4 with python 3.7
+Installed pip and requirements.txt 
+Lap solver could not be built (cmake version too low)
+Tried to conda install from forge x
+Tried installing lapsolver again from pip
+Installed torch 1.7.1 and torchvision 0.8.2 from the paper with pip
+Installed pycoco from source
+Running install script fails (FIXED)
+Tried ensuring pip was upgraded and rebuilt setup tools X
+Tried to upgrade g++ but could not find the path to python 3.7
+Verified path exists
+Retried with sourcing python 3.7.1
+Used the bash command cxx==g++ to execute script with g++
+Tried to conda install from forge cxx to update g++
+Same issue (python not found)
+Tried using cxx compiler flag
+Tried to update conda to latest version
+File permission error, needed to deactivate the environment
+Tried to install latest gcc with conda from the source 
+Used a source URL from a community post to update gcc (WORKED!)
+Got the mot17 dataset and unzipped, ran script to do coco annotation
+Running Track.py to test the pretrained model fails (FIXED)
+Caused by A40 GPU being incompatible with deprecated torch version
+Tried github fix on installing nightly version of cuda toolkit
+Tries to reinstall numpy with conda
+Pip installed typing_extensions after conda install doesn’t work
+Tried to install torch and torchvision with conda instead of pip
+Interestingly cuda is not available if conda is used to install torch
+Upgraded pytorch with pip to 1.10.0
+Tried several different cuda versions (10.1, 9.1, 8.0)
+Switched to Mangi 
+Code finally executes  but no kernel images in msdeformable_im2col_cuda
+Tried different versions of cuda and cudatoolkit.
+Tried pip install from source pytorch+cu111
+MOdule loaded cudnn/8.2.0
+Reran build script (FIXED)
+Wrong numpy vector size
+Upgraded numpy to 1.20.3 (Author’s recommendation) (FIXED)
+Training
+Downloaded the custom sports mot dataset
+This was 35 GB, uploading to MSI would take 7 hours
+Eliminated much of the data to reduce the dataset to 5GB
+Fixed broken zip structure by running the command zif FFu 
+Training Starts! But run into an issue: The json files now have pointers to nonexistent files. Changing these points is a long process. 
+NEXT STEPS: Either update all the pointers or find a way to move the entire dataset. Could Try Rsync
 
 # Novel Data Testing Results
 
